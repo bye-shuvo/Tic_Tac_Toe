@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu:wght@300&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(54, 54, 73);
+    color: white;
+}
+
+nav ul{
+    height: 9vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+}
+
+ul #play{
+    height: 30px;
+    width: 90px;
+    background: #ff8300;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.8);
+}
+
+.game_container{
+    display: flex;
+    justify-content:center;   
+    gap: 10vw;
+    margin: 7vh 5vw 0vh 5vw;
+}
+
+.gamesec{
+    display: grid;
+    grid-template-columns: repeat(3 , 8vw);
+    grid-template-rows: repeat(3 , 8vw);
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 8vw;
+    font-family: "Indie Flower", cursive;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgba(135, 74, 192, 0.349);
+}
+
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+.game_info{
+    font-family: "Rubik Scribble", system-ui;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.game_info h1{
+    font-size: 2em;
+}
+
+.info{
+    margin-top: 3vh;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1em;
+}
+
+#Reset{
+    margin-left: 2vw;
+    height: 2em;
+    width: 5em;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1em;
+    background: orange;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.8);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.game_info img{
+    margin-top: 10vh;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width : 780px) {
+
+    nav ul{
+        height: 4rem;
+        padding: 1em;
+        justify-content: space-between;
+    }
+
+    .game_container{
+        flex-wrap: wrap;
+    }
+
+    .gamesec{
+        height: 15rem;
+        width: fit-content;
+        grid-template-columns: repeat(3 , 5rem);
+        grid-template-rows: repeat(3 , 5rem);
+    }
+
+    .box{
+        font-size: 5em;
+    }
+    
+    .game_info h1{
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .game_info img{
+        margin-top: 3rem;
+    }
+
+}
