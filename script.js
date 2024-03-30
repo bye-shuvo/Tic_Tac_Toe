@@ -1,9 +1,9 @@
 console.log("Welcome to Tic Tac Toe !!!");
 
-let music = new Audio("/JS_PROJECTS/Tic_Tac_Toe_Game/very-lush-and-swag-loop-74140.mp3");
-let buttonPress = new Audio("/JS_PROJECTS/Tic_Tac_Toe_Game/click-47609.mp3");
-let AudioTurn = new Audio("/JS_PROJECTS/Tic_Tac_Toe_Game/90s-game-ui-2-185095.mp3");
-let win = new Audio("/JS_PROJECTS/Tic_Tac_Toe_Game/90s-game-ui-11-185104.mp3");
+let music = new Audio("very-lush-and-swag-loop-74140.mp3");
+let buttonPress = new Audio("click-47609.mp3");
+let AudioTurn = new Audio("90s-game-ui-2-185095.mp3");
+let win = new Audio("90s-game-ui-11-185104.mp3");
 
 let turn = "X";
 
